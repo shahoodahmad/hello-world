@@ -7,7 +7,7 @@ p {
   display: block;
   width: 400px;
   margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 30px Monaco,"Comic Sans","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 
 .center {
@@ -18,5 +18,5 @@ p {
 }
 
 img {
-  border-radius: 45%;
+  border-radius: 50%;
 }
