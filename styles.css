@@ -38,10 +38,11 @@ float: left;
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 400px;
+  width: 370px;
   transition: all 0.7s;
   cursor: pointer;
   margin: 5px;
+  position: absolute;
 }
 
 .button span {
