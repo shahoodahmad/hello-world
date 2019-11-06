@@ -38,8 +38,8 @@ float: left;
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
+  width: 400px;
+  transition: all 0.7s;
   cursor: pointer;
   margin: 5px;
 }
