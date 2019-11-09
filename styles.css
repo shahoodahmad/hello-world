@@ -5,6 +5,13 @@ p {
   font: 30px Monaco,"Comic Sans","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 
+p.link {
+  display: block;
+  width: 1000px;
+  margin: 50px auto;
+  font: 50px Monaco,"Comic Sans","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
 .center {
   display: block;
   margin-left: auto;
