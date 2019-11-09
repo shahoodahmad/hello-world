@@ -71,4 +71,16 @@ float: left;
   right: 0;
 }
 
-}
+.button1 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+  color: pink;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 260px;
+  cursor: pointer;
+  margin: 5px;
+  position: static; }
