@@ -10,6 +10,7 @@ p.link {
   width: 1000px;
   margin: 50px auto;
   font: 45px Monaco,"Comic Sans","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  color : #EEDBD6; 
 }
 
 .center {
@@ -89,6 +90,6 @@ float: left;
 
 body{
   background-color: #352D2B ;
-  color: #EEDBD6 ; 
+  color: #EEDBD6 ;
 
 }
