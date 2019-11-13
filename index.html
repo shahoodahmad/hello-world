@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>-Fun</title>
+  <title>Fun</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -15,7 +15,27 @@
       </p>
   </center>
 
-  <button class="button" type="button" onclick=darkMode() style="width:500px;height:500px"> <span>More Cap?</span></button>
+  <button class="button1" type="button" onclick=darkMode()>Dark Mode</button>
+  <button class="button1" type="button" onclick=lightMode()>Light Mode</button>
+
+  <script>
+  function darkMode() {
+    document.getElementByClass('body').backgroundColor="#352D2B";
+    document.getElementByClass('body').Color="#E9AE9E";
+    document.getElementByClass('body').Color="#FFFFFF";
+
+    }
+
+  function lightMode() {
+    document.getElementByClass('body').backgroundColor="#FFFFFF";
+    document.getElementByClass('body').color="#000000";
+    document.getElementByClass('body').Color="#000000";
+
+  }
+
+  </script>
+
+
 
 
 <a href="https://teamtrees.org/" target="_blank">
