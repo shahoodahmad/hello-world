@@ -2,34 +2,65 @@
 
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"
-  name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bulb</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-    <center>
-      <p class="link">
-    <b>Home</b> | <a href="Teacher.html">Teacher Pyramid</a> | <a href="bulb.html">Lightbulb</a>
-  </p>
-    </center>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>heck</title>
+  <LINK id="link1" href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
+      <center>
+  <p class="link">
+      <b>Home</b> | <a href="Teacher.html">Teacher Pyramid</a> | <a href="bulb.html">Lightbulb</a>
+      </p>
+  </center>
+
+  <button class="button1" type="button" onclick=Mode(styles.css)>Dark Mode</button>
+  <button class="button1" type="button" onclick=Mode(styles1.css)>Light Mode</button>
+
+  <script>
+  function Mode(sheet) {
+    var a = document.getElementById('link1');
+    a.setAttribute("href", sheet);
+    document.getElementById('link2').setAttribute("href", sheet);
+    document.getElementById('link3').setAttribute("href", sheet);
+    }
+
+  </script>
+
+
+
+
 <a href="https://teamtrees.org/" target="_blank">
-<img id="cap" src="/images/Coolname.jpg" alt="name"  class ="center left" style="width:500px;height:500px;">
+<img id="myImage" src="/images/Coolname.jpg" alt="name"  style="width:500px;height:500px" class ="center left">
 </a>
 
-<button class="button" type="button" onclick=change()>
-  <span>More Cap?</span></button>
-
-<a href="https://patch.com/new-york/fivetowns/hewlett-teacher-honored-by-harvard" target="_blank">
-<img id="cap" src="/images/cap.jpg" alt="Cool Guy" class ="center right" title="Cap is Cool" style="width:500px;height:500px;">
-</a>
+<button class="button" type="button" onclick=change()> <span>More Cap?</span></button>
 
 <script>
 function change() {
-  document.getElementById('cap').src="/images/cap.jpg"; }
+    document.getElementById('myImage').src="/images/cap.jpg";
+    document.getElementById('empty').src="/images/cap.jpg";
+    document.getElementById('empty1').src="/images/cap.jpg";
+    document.getElementById('empty2').src="/images/cap.jpg";
+    document.getElementById('empty3').src="/images/cap.jpg";
+    document.getElementById('empty4').src="/images/cap.jpg";
+    document.getElementById('empty5').src="/images/cap.jpg";
+  }
+
 </script>
+
+<a href="https://patch.com/new-york/fivetowns/hewlett-teacher-honored-by-harvard" target="_blank">
+<img src="/images/cap.jpg" alt="Cool Guy" class ="center right" style="width:500px;height:500px"  title="Cap is Cool">
+</a>
+
+<img id="empty">
+<img id="empty1">
+<img id="empty2">
+<img id="empty3">
+<img id="empty4">
+<img id="empty5">
+
 
 </body>
 </html>
