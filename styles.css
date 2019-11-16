@@ -88,12 +88,13 @@ float: left;
   margin: 5px;
   position: static; }
 
-body{
-  background-color: #352D2B ;
-  color: #E9AE9E ;
 
-}
+  body{
+    background-color: #352D2B ;
+    color: #E9AE9E ;
 
-a{
-  color: #A0F114;
-}
+  }
+
+  a{
+    color: #A0F114;
+  }
