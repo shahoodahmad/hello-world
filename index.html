@@ -35,9 +35,7 @@
 <button class="button" type="button" onclick=change()> <span>More Cap?</span></button>
 
 <script>
-var clickcount = 2;
 function change() {
-  if (var clickcount % 2 != 0) {
     document.getElementById('myImage').src="/images/cap.jpg";
     document.getElementById('empty').src="/images/cap.jpg";
     document.getElementById('empty1').src="/images/cap.jpg";
@@ -45,20 +43,6 @@ function change() {
     document.getElementById('empty3').src="/images/cap.jpg";
     document.getElementById('empty4').src="/images/cap.jpg";
     document.getElementById('empty5').src="/images/cap.jpg";
-    clickcount++;
-  }
-
-  else {
-    document.getElementById('myImage').src="";
-    document.getElementById('empty').src="";
-    document.getElementById('empty1').src="";
-    document.getElementById('empty2').src="";
-    document.getElementById('empty3').src="";
-    document.getElementById('empty4').src="";
-    document.getElementById('empty5').src="";
-    clickcount++;
-
-}
 }
 
 </script>
