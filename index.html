@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>page 1234567</title>
+  <title>page 1</title>
   <LINK id="link1" href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -20,15 +20,17 @@
   var modecounter = 0;
   function Mode() {
     modecounter++;
-    if (modecounter % 2 == 0){
+if (modecounter % 2 == 0){
+    document.getElementById('capbutton').innerHTML="Dark Mode";
     document.getElementById("link1").href = "styles.css";}
 else {
+  document.getElementById('capbutton').innerHTML="Light Mode";
   document.getElementById("link1").href = "styles1.css";}
   }
 
   </script>
 
-  <button class="button" type="button" onclick="Mode();"><span>Dark Mode</span></button>
+  <button id="modebutton" class="button" type="button" onclick="Mode();"><span>Dark Mode</span></button>
 
 <a href="https://teamtrees.org/" target="_blank">
 <img id="myImage" src="/images/Coolname.jpg" alt="name"  style="width:500px;height:500px" class ="center left">
@@ -41,6 +43,7 @@ var count = 0;
 function change() {
   count++;
   if (count % 2 == 0){
+    document.getElementById('capbutton').innerHTML="More Cap?";
     document.getElementById('myImage').src="/images/Coolname.jpg";
     document.getElementById('empty').src="";
     document.getElementById('empty1').src="";
@@ -50,7 +53,7 @@ function change() {
     document.getElementById('empty5').src="";
 }
 else{
-  document.getElementById('capbutton').innerHTML="Less Cap";
+  document.getElementById('capbutton').innerHTML="Less Cap?";
   document.getElementById('myImage').src="/images/cap.jpg";
   document.getElementById('empty').src="/images/cap.jpg";
   document.getElementById('empty1').src="/images/cap.jpg";
