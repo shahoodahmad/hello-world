@@ -18,7 +18,7 @@
   <script>
 
   var modecounter = 0;
-  function Mode(cssFile) {
+  function Mode() {
     modecounter++;
     if (modecounter % 2 == 0){
     document.getElementById("link1").href = "styles.css";}
@@ -28,21 +28,20 @@ else {
 
   </script>
 
-  <button class="button" type="button" onclick="Mode('styles.css');"><span>Dark Mode</span></button>
-  <button class="button" type="button" onclick="Mode('styles1.css');"><span>Light Mode</span></button>
+  <button class="button" type="button" onclick="Mode();"><span>Dark Mode</span></button>
 
 <a href="https://teamtrees.org/" target="_blank">
 <img id="myImage" src="/images/Coolname.jpg" alt="name"  style="width:500px;height:500px" class ="center left">
 </a>
 
-<button class="button" type="button" onclick=change()> <span>More Cap?</span></button>
+<button id = "capbutton" class="button" type="button" onclick=change()> <span>More Cap?</span></button>
 
 <script>
 var count = 0;
 function change() {
   count++;
   if (count % 2 == 0){
-    document.getElementById('myImage').src="";
+    document.getElementById('myImage').src="/images/Coolname.jpg";
     document.getElementById('empty').src="";
     document.getElementById('empty1').src="";
     document.getElementById('empty2').src="";
@@ -51,6 +50,7 @@ function change() {
     document.getElementById('empty5').src="";
 }
 else{
+  document.getElementById('capbutton').value="Less Cap";
   document.getElementById('myImage').src="/images/cap.jpg";
   document.getElementById('empty').src="/images/cap.jpg";
   document.getElementById('empty1').src="/images/cap.jpg";
