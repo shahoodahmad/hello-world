@@ -16,11 +16,14 @@
   </center>
 
   <script>
-  function Mode(cssFile) {
-    document.getElementById("link1").href = cssFile;
-    document.getElementById("link2").href = cssFile;
-    document.getElementById("link3").href = cssFile;
 
+  var modecounter = 0;
+  function Mode(cssFile) {
+    modecounter++;
+    if (modecounter%2 == 0){
+    document.getElementById("link1").href = "styles.css";}
+else {
+  document.getElementById("link1").href = "styles1.css";}
   }
 
   </script>
@@ -38,23 +41,23 @@
 var count = 0;
 function change() {
   count++;
-  if (count % 2){
-    document.getElementById('myImage').src="";
-    document.getElementById('empty').src="";
-    document.getElementById('empty1').src="";
-    document.getElementById('empty2').src="";
-    document.getElementById('empty3').src="";
-    document.getElementById('empty4').src="";
-    document.getElementById('empty5').src="";
+  if (count % 2 == 0){
+    document.getElementById('myImage').src="/images/cap.jpg";
+    document.getElementById('empty').src="/images/cap.jpg";
+    document.getElementById('empty1').src="/images/cap.jpg";
+    document.getElementById('empty2').src="/images/cap.jpg";
+    document.getElementById('empty3').src="/images/cap.jpg";
+    document.getElementById('empty4').src="/images/cap.jpg";
+    document.getElementById('empty5').src="/images/cap.jpg";
 }
 else{
-document.getElementById('myImage').src="/images/cap.jpg";
-document.getElementById('empty').src="/images/cap.jpg";
-document.getElementById('empty1').src="/images/cap.jpg";
-document.getElementById('empty2').src="/images/cap.jpg";
-document.getElementById('empty3').src="/images/cap.jpg";
-document.getElementById('empty4').src="/images/cap.jpg";
-document.getElementById('empty5').src="/images/cap.jpg";
+document.getElementById('myImage').src="";
+document.getElementById('empty').src="";
+document.getElementById('empty1').src="";
+document.getElementById('empty2').src="";
+document.getElementById('empty3').src="";
+document.getElementById('empty4').src="";
+document.getElementById('empty5').src="";
 }
 }
 
