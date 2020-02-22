@@ -21,16 +21,16 @@
   function Mode() {
     modecounter++;
 if (modecounter % 2 == 0){
-    document.getElementById('modebutton').innerHTML="Dark Mode";
+    document.getElementById('modebutton').innerHTML="Light Mode";
     document.getElementById("link1").href = "styles.css";}
 else {
-  document.getElementById('modebutton').innerHTML="Light Mode";
+  document.getElementById('modebutton').innerHTML="Dark Mode";
   document.getElementById("link1").href = "styles1.css";}
   }
 
   </script>
 
-  <button id="modebutton" class="button" type="button" onclick="Mode();"><span>Dark Mode</span></button>
+  <button id="modebutton" class="button" type="button" onclick="Mode();"><span>Light Mode</span></button>
 
 <a href="https://teamtrees.org/" target="_blank">
 <img id="myImage" src="/images/Coolname.jpg" alt="name"  style="width:400px;height:400px" class ="center left">
