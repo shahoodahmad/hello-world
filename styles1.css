@@ -1,3 +1,4 @@
+/*lightmode*/
 p {
   display: block;
   width: 1000px;
@@ -89,7 +90,7 @@ float: left;
   position: static; }
 
 body{
-  background-color: #FFFFFF ;
+  background-color: #e4eff6 ;
   color: #352D2B ;
 
 }
