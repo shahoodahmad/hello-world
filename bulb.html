@@ -2,7 +2,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"
   name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>newpage</title>
+  <title>yes</title>
   <LINK id="link3" href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -25,9 +25,9 @@
     var bulbcount = 0;
     function changeImage() {
       bulbcount++;
-      if (count % 2 == 0){
+      if (bulbcount % 2 == 0){
         document.getElementsByClassName('button1').innerHTML="Turn bulb on";
-        document.getElementById('bulb').src="/images/bulbon.jpg";
+        document.getElementById('bulb').src="/images/bulboff.jpg";
         }
       else{
         document.getElementsByClassName('button1').innerHTML="Turn bulb off";
