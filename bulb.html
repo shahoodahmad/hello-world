@@ -17,7 +17,7 @@
 
 <img id="bulb" src="/images/bulboff.jpg" align="center" alt="bulboff" style="width:400px;height:400px;">
 
-<button class="button1" type="button" onclick=changeImage()>
+<button id="b1" class="button1" type="button" onclick=changeImage()>
   Turn bulb on</button>
 
 
@@ -26,11 +26,11 @@
     function changeImage() {
       bulbcount++;
       if (bulbcount % 2 == 0){
-        document.getElementsByClassName('button1').innerHTML="Turn bulb on";
+        document.getElementById('b1').innerHTML="Turn bulb on";
         document.getElementById('bulb').src="/images/bulboff.jpg";
         }
       else{
-        document.getElementsByClassName('button1').innerHTML="Turn bulb off";
+        document.getElementById('b1').innerHTML="Turn bulb off";
         document.getElementById('bulb').src="/images/bulbon.jpg";
       }
     }
