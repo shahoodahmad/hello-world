@@ -26,12 +26,12 @@
     function changeImage() {
       bulbcount++;
       if (count % 2 == 0){
-        document.getElementById('b1').innerHTML="Turn bulb off";
-        document.getElementById('bulb').src="/images/bulbon.jpg";
-        }
-      else{
         document.getElementById('b1').innerHTML="Turn bulb on";
         document.getElementById('bulb').src="/images/bulboff.jpg";
+        }
+      else{
+        document.getElementById('b1').innerHTML="Turn bulb off";
+        document.getElementById('bulb').src="/images/bulbon.jpg";
       }
     }
   </script>
@@ -39,3 +39,5 @@
 
 </body>
 </html>
+document.getElementById('b1').innerHTML="Turn bulb off";
+document.getElementById('bulb').src="/images/bulbon.jpg";
