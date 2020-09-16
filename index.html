@@ -20,50 +20,53 @@
   var modecounter = 0;
   function Mode() {
     modecounter++;
-if (modecounter % 2 == 0){
-    document.getElementById('modebutton').innerHTML="Light Mode";
-    document.getElementById("link1").href = "styles.css";}
-else {
-  document.getElementById('modebutton').innerHTML="Dark Mode";
-  document.getElementById("link1").href = "styles1.css";}
+      if (modecounter % 2 == 0){
+        document.getElementById('modebutton').innerHTML="Light Mode";
+        document.getElementById("link1").href = "styles.css";}
+      else {
+        document.getElementById('modebutton').innerHTML="Dark Mode";
+        document.getElementById("link1").href = "styles1.css";}
   }
 
   </script>
 
+  <center>
   <button id="modebutton" class="button" type="button" onclick="Mode();"><span>Light Mode</span></button>
+  </center>
 
-<a href="https://teamtrees.org/" target="_blank">
-<img id="myImage" src="/images/Coolname.jpg" alt="name"  style="width:400px;height:400px" class ="center left">
-</a>
+  <a href="https://teamtrees.org/" target="_blank">
+    <img id="myImage" src="/images/Coolname.jpg" alt="name"  style="width:400px;height:400px" class ="center left">
+  </a>
 
-<button id = "capbutton" class="button" type="button" onclick=change()> <span>More Cap?</span></button>
+  <button id = "capbutton" class="button" type="button" onclick=change()> <span>More Cap?</span></button>
 
-<script>
-var count = 0;
-function change() {
-  count++;
-  if (count % 2 == 0){
-    document.getElementById('capbutton').innerHTML="More Cap?";
-    document.getElementById('myImage').src="/images/Coolname.jpg";
-    document.getElementById('empty').src="";
-    document.getElementById('empty1').src="";
-    document.getElementById('empty2').src="";
-    document.getElementById('empty3').src="";
-    document.getElementById('empty4').src="";
-    document.getElementById('empty5').src="";
-    document.getElementById('empty6').src="";
+  <script>
+  var count = 0;
+  function change() {
+    count++;
+    if (count % 2 == 0){
+      document.getElementById('capbutton').innerHTML="More Cap?";
+      document.getElementById('myImage').src="/images/Coolname.jpg";
+      document.getElementById('empty').src="";
+      document.getElementById('empty1').src="";
+      document.getElementById('empty2').src="";
+      document.getElementById('empty3').src="";
+      document.getElementById('empty4').src="";
+      document.getElementById('empty5').src="";
+      document.getElementById('empty6').src="";
 
-}
-else{
-  document.getElementById('capbutton').innerHTML=" Less Cap?";
-  document.getElementById('myImage').src="/images/cap.jpg";
-  document.getElementById('empty').src="/images/cap.jpg";
-  document.getElementById('empty1').src="/images/cap.jpg";
-  document.getElementById('empty2').src="/images/cap.jpg";
-  document.getElementById('empty3').src="/images/cap.jpg";
-  document.getElementById('empty4').src="/images/cap.jpg";
-  document.getElementById('empty5').src="/images/cap.jpg";
-  document.getElementById('empty6').src="/images/cap.jpg";
+    }
+
+    else{
+      document.getElementById('capbutton').innerHTML=" Less Cap?";
+      document.getElementById('myImage').src="/images/cap.jpg";
+      document.getElementById('empty').src="/images/cap.jpg";
+      document.getElementById('empty1').src="/images/cap.jpg";
+      document.getElementById('empty2').src="/images/cap.jpg";
+      document.getElementById('empty3').src="/images/cap.jpg";
+      document.getElementById('empty4').src="/images/cap.jpg";
+      document.getElementById('empty5').src="/images/cap.jpg";
+      document.getElementById('empty6').src="/images/cap.jpg";
 
 }
 }
