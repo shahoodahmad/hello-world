@@ -15,20 +15,11 @@
 </p>
 
 <script>
-  const descriptivePictureElement = document.querySelector(".descriptive-picture");
-  const temperatureElement = document.querySelector(".temperature a");
-  const descriptionElement = document.querySelector(".weather-description p");
-  const locationElement = document.querySelector(".location p");
 
-  if('geolocation' in navigator){
-    navigator.geolocation.getCurrentPosition(setPosition, showError);
-  }else{
-    notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
-  }
 </script>
 
-<div class="popup" onclick="myFunction()"> 
-  <span id="myPopup">Popup text...</span>
+<div class="notification">
+  <p>Location access status</p>
 </div>
 
 <div class="full-app-container">
