@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Portfolio</title>
+  <title>dddPortfolio</title>
   <LINK id="link1" href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -31,24 +31,20 @@
   </script>
 
   <div>
-  <center>
-    <button id="modebutton" class="button" type="button left" onclick="Mode();"><span>Light Mode</span></button>
-  </center>
+    <a href="https://teamtrees.org/" target="_blank">
+      <img id="myImage" src="/images/Coolname.jpg" alt="name" class ="left" style="width:400px;height:400px">
+    </a>
+
+    <button id="modebutton" class="button center left" type="button" onclick="Mode();"><span>Light Mode</span></button>
+
+    <button id = "capbutton" class="button center right" type="button right" onclick=change()> <span>More Cap?</span></button>
+
+
+    <a href="https://patch.com/new-york/fivetowns/hewlett-teacher-honored-by-harvard" target="_blank">
+      <img src="/images/cap.jpg" alt="Cool Guy" style="width:400px;height:400px"  title="Cap is Cool"class ="right">
+    </a>
+
   </div>
-
-  <center>
-  <div>
-    <button id = "capbutton" class="button" type="button right" onclick=change()> <span>More Cap?</span></button>
-  </center>
-  </div>
-
-  <a href="https://teamtrees.org/" target="_blank">
-    <img id="myImage" src="/images/Coolname.jpg" alt="name" class ="center left" style="width:400px;height:400px">
-  </a>
-
-  <a href="https://patch.com/new-york/fivetowns/hewlett-teacher-honored-by-harvard" target="_blank">
-    <img src="/images/cap.jpg" alt="Cool Guy" style="width:400px;height:400px"  title="Cap is Cool"class ="center right">
-  </a>
 
   <script>
   var count = 0;
