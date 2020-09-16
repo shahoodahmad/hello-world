@@ -22,7 +22,7 @@ p.link {
 
 img {
   border-radius: 50%;
-  position: static;
+  position: relative;
 }
 
 .right{
@@ -46,30 +46,15 @@ float: left;
   transition: all 0.7s;
   cursor: pointer;
   margin: 5px;
-  position: static;
+  position: relative;
 }
 
-.button1 {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #00FFFF;
-  color: 	#FF1493;
-  border: none;
-  text-align: center;
-  font-size: 25px;
-  padding: 20px;
-  width: 260px;
-  cursor: pointer;
-  margin: 5px;
-  position: static; }
+body{
+  background-color: #352D2B ;
+  color: #E9AE9E ;
 
+}
 
-  body{
-    background-color: #352D2B ;
-    color: #E9AE9E ;
-
-  }
-
-  a{
-    color: #A0F114;
-  }
+a{
+  color: #A0F114;
+}
