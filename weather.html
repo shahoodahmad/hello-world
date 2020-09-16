@@ -1,47 +1,44 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Weather App</title>
+  <title>dddPortfolio</title>
   <LINK id="link1" href="styles.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 
-<center>
-<p class="link">
-<a href="index.html">Home</a> | <a href="bulb.html">Lightbulb</a> | <a href="scratch.html">Scratch</a> | <b>Weather</b>
-</p>
+  <center>
 
-<script>
+  <p class="link">
+  <a href="index.html">Home</a> | <a href="bulb.html">Lightbulb</a> | <a href="scratch.html">Scratch</a> | <b>Weather</b>
+  </p>
 
-</script>
+  <div class="full-app-container">
+    <div class="title">
+      <p>Weather App</p>
+    </div>
+    <div class="locationButton">
+      <button class="button" onclick="getLocation()"> Give location access</button>
+      <p id = "notification"></p>
+    </div>
+    <div class="descriptive-picture">
+      <img src="images/icons/unknown.png" alt="?">
+    </div>
+    <div class="temperature">
+      <p>-- °C</p>
+    </div>
+    <div class="weather-description">
+      <p>Status Unknown</p>
+    </div>
+    <div class="location">
+      <p>Your current location is:</p>
+      <p>Unknown</p>
+    </div>
 
-<div class="notification">
-  <p>Location access status</p>
-</div>
-
-<div class="full-app-container">
-  <div class="title">
-    <p>Weather App</p>
-  </div>
-  <div class="descriptive-picture">
-    <img src="images/icons/unknown.png" alt="?">
-  </div>
-  <div class="temperature">
-    <p>-- °C</p>
-  </div>
-  <div class="weather-description">
-    <p>Status Unknown</p>
-  </div>
-  <div class="location">
-    <p>Your current location is:</p>
-    <p>Unknown</p>
   </div>
 
-</div>
-</center>
+  <script src= "weather.js"> </script>
+
 
 </body>
 </html>
