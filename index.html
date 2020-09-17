@@ -28,14 +28,6 @@
         document.getElementById("link1").href = "styles1.css";}
   }
 
-  const nameElement = document.getElementById('capbutton');
-nameElement.addEventListener('mouseenter', () => {
-  nameElement.innerHTML = 'Dont you dare!';
-});
-
-nameElement.addEventListener('mouseleave', () => {
-  nameElement.innerHTML = 'Less Cap?';
-});
   </script>
 
   <div>
@@ -84,6 +76,15 @@ nameElement.addEventListener('mouseleave', () => {
 
 }
 }
+
+const nameElement = document.getElementById('capbutton');
+nameElement.addEventListener('mouseenter', () => {
+nameElement.innerHTML = 'Dont you dare!';
+});
+
+nameElement.addEventListener('mouseleave', () => {
+nameElement.innerHTML = 'Less Cap?';
+});
 
 
 </script>
