@@ -18,5 +18,5 @@ function showPosition(position) {
 
 function showError(error) {
     if(error.PERMISSION_DENIED){}
-      x.innerHTML = "Location access not granted <br> Reload the page or reset your location settings <br> to give location acces and use the app"
+      x.innerHTML = "Location access not granted <br> Reload the page or reset your location settings <br> to give location access and use the app"
     }
