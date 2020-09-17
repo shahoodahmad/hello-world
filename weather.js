@@ -1,5 +1,5 @@
 
-var x = document.getElementByClassName("notification");
+var x = document.getElementById("notification");
 
 function getLocation() {
   if (navigator.geolocation) {
