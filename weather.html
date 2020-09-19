@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>dddPortfolio</title>
+  <title>Weather App</title>
   <LINK id="link1" href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -22,18 +22,18 @@
       <button class="button" onclick="getLocation()"> Give location access</button>
       <p id="notification"></p>
     </div>
-    <div class="descriptive-picture">
-      <img src="images/icons/unknown.png" alt="?">
+    <div>
+      <img id="descriptive-picture" src="images/icons/unknown.png" alt="?">
     </div>
-    <div class="temperature">
-      <p>-- °C</p>
+    <div>
+      <p id="temperature">-- °C</p>
     </div>
-    <div class="weather-description">
-      <p>Status Unknown</p>
+    <div>
+      <p id="weather-description">Status Unknown</p>
     </div>
-    <div class="location">
+    <div>
       <p>Your current location is:</p>
-      <p>Unknown</p>
+      <p id="location">Unknown</p>
     </div>
 
   </div>
