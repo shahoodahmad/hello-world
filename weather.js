@@ -1,5 +1,5 @@
 // access all the elements to be formatted
-var notification = document.getElementById("notification");
+let notification = document.getElementById("notification");
 var descPic = document.getElementById("descriptive-picture");
 var temp = document.getElementById("temperature");
 var weatherDesc = document.getElementById("weather-description");
@@ -12,7 +12,6 @@ function getLocation() {
   }
   else {
     notification.innerHTML = "Geolocation not supported";
-    ;
   }
 }
 
