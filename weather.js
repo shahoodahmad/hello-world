@@ -8,7 +8,7 @@ var location = document.getElementById("location");
 // use the html geolocator api to find the user's location
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
+    navigator.geolocation.getCurrentPosition(setPosition, showError);
   }
   else {
     notification.innerHTML = "Geolocation not supported";
@@ -18,6 +18,7 @@ function getLocation() {
 
 // if access allowed, store the position and call the weather api function
 function setPosition(position) {
+  notification.innerHTML = "Location Found";
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;
   getWeather(latitude, longitude);
