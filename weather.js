@@ -32,40 +32,41 @@ function showError(error) {
 
 
 // create a weather object to store the api information
-var weather = {};
+const weather = {};
 
 // set temperature unit to celcius (default)
-weather.temperature = {
-  unit = "celcius"
-}
+
 
 // weather api call function
 function getWeather(latitude, longitude){
   let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=09ca28f467aa94c207b9ce9c95473bc9`;
 
-      fetch(api)
-          .then(function(response){
-              let data = response.json();
-              return data;
-          })
-          .then(function(data){
-              weather.temperature.value = Math.floor(data.main.temp - 273);
-              weather.description = data.weather[0].description;
-              weather.iconId = data.weather[0].icon;
-              weather.city = data.name;
-              weather.country = data.sys.country;
-          })
-          .then(function(){
-              outputWeather();
-          });
-  }
+  fetch(api)
+        .then(function(response){
+            let data = response.json();
+            return data;
+        })
+        .then(function(data){
+            console.log(data);
+            weather.temperature = Math.floor(data.main.temp - 273);
+            weather.description = data.weather[0].description;
+            weather.iconId = data.weather[0].icon;
+            weather.city = data.name;
+            weather.country = data.sys.country;
+            console.log(weather);
+
+        })
+        .then(function(){
+            outputWeather();
+        });
 }
 
-// outputWeather function of chage the html
-function outputWeather(){
-    notification.innerHTML = "Click the temperature unit to convert to another unit";
-    descPic.innerHTML = `<img src="images/icons/${weather.iconId}.png"/>`;
-    temp.innerHTML = `${weather.temperature.value}°<span>C</span>`;
-    weatherDesc.innerHTML = weather.description;
-    CountryCity.innerHTML = `${weather.city}, ${weather.country}`;
-}
+  console.log(weather);
+
+  function outputWeather(){
+      notification.innerHTML = "Click the temperature unit to convert to another unit";
+      descPic.innerHTML = `<img src="images/icons/${weather.iconId}.png"/>`;
+      temp.innerHTML = `${weather.temperature} °C`;
+      weatherDesc.innerHTML = weather.description;
+      CountryCity.innerHTML = `${weather.city}, ${weather.country}`;
+  }
