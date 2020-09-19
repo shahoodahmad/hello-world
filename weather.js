@@ -39,7 +39,7 @@ const weather = {};
 
 // weather api call function
 function getWeather(latitude, longitude){
-  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=09ca28f467aa94c207b9ce9c95473bc9`;
+  let api = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=09ca28f467aa94c207b9ce9c95473bc9`;
 
   fetch(api)
         .then(function(response){
