@@ -1,14 +1,14 @@
 // access all the elements to be formatted
 let notification = document.getElementById("notification");
-var descPic = document.getElementById("descriptive-picture");
-var temp = document.getElementById("temperature");
-var weatherDesc = document.getElementById("weather-description");
-var location = document.getElementById("location");
+let descPic = document.getElementById("descriptive-picture");
+let temp = document.getElementById("temperature");
+let weatherDesc = document.getElementById("weather-description");
+let CountryCity = document.getElementById("Country-City");
 
 // use the html geolocator api to find the user's location
-function getLocation() {
+function getCoords() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(setPosition, showError);
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
   }
   else {
     notification.innerHTML = "Geolocation not supported";
@@ -16,8 +16,8 @@ function getLocation() {
 }
 
 // if access allowed, store the position and call the weather api function
-function setPosition(position) {
-  notification.innerHTML = "Location Found";
+function showPosition(position) {
+  notification.innerHTML = "Location found";
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;
   getWeather(latitude, longitude);
@@ -25,12 +25,13 @@ function setPosition(position) {
 
 // if location blocked, display a notification
 function showError(error) {
-    if(error.PERMISSION_DENIED){}
-      notification.innerHTML = "Location access not granted <br> Reload the page or reset your location settings <br> to give location access and use the app"
+    if(error.PERMISSION_DENIED){
+      notification.innerHTML = "Location access not granted <br> Reload the page or reset your location settings <br> to give location access and use the app";
     }
+  }
 
 // create a weather object to store the api information
-const weather = {};
+var weather = {};
 
 // set temperature unit to celcius (default)
 weather.temperature = {
@@ -65,5 +66,5 @@ function outputWeather(){
     descPic.innerHTML = `<img src="images/icons/${weather.iconId}.png"/>`;
     temp.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     weatherDesc.innerHTML = weather.description;
-    location.innerHTML = `${weather.city}, ${weather.country}`;
+    CountryCity.innerHTML = `${weather.city}, ${weather.country}`;
 }
