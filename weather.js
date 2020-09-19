@@ -6,7 +6,7 @@ let weatherDesc = document.getElementById("weather-description");
 let CountryCity = document.getElementById("Country-City");
 
 // use the html geolocator api to find the user's location
-function getCoords() {
+function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
   }
@@ -29,6 +29,7 @@ function showError(error) {
       notification.innerHTML = "Location access not granted <br> Reload the page or reset your location settings <br> to give location access and use the app";
     }
   }
+
 
 // create a weather object to store the api information
 var weather = {};
