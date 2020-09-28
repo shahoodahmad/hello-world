@@ -1,101 +1,40 @@
+
 <!DOCTYPE html>
 
 <html>
 <head>
+  <link rel="icon" href="icons/13n.png">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Portfolio</title>
-  <LINK id="link1" href="styles1.css" rel="stylesheet" type="text/css">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <title>🌞 Weather 🌜</title>
+  <LINK href="theme.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 
   <center>
-  <p> <b>Home</b> </p>
-  </center>
 
-  <script>
+      <h1>Weather App</h1>
 
-  var modecounter = 0;
-  function Mode() {
-    modecounter++;
-      if (modecounter % 2 == 0){
-        document.getElementById('modebutton').innerHTML="Light Mode";
-        document.getElementById("link1").href = "styles.css";}
-      else {
-        document.getElementById('modebutton').innerHTML="Dark Mode";
-        document.getElementById("link1").href = "styles1.css";}
-  }
+      <button id="B" class="button" onclick="getLocation()">Give location access</button>
+      <p id="notification"></p>
 
-  </script>
-
-  <div>
-    <a href="https://teamtrees.org/" target="_blank">
-      <img id="myImage" src="/images/Coolname.jpg" alt="name" class ="left" style="width:400px;height:400px">
-    </a>
-
-    <button id="modebutton" class="button center left" type="button" onclick="Mode();"><span>Light Mode</span></button>
-
-    <button id = "capbutton" class="button center right" type="button right" onclick=change()> <span>More Cap?</span></button>
+    <div>
+      <p id="descriptive-picture"><img src="icons/unknown.png" alt="?"></p>
+      <p id="temperature">-- °C</p>
+      <p id="feels-like"></p>
+      <p id="weather-description"></p>
+      <p id="wind-speed"></p>
+      <p id="humidity"></p>  <p id="clouds"></p>
+      <p id="Country-City"></p>
+    </div>
 
 
-    <a href="https://patch.com/new-york/fivetowns/hewlett-teacher-honored-by-harvard" target="_blank">
-      <img src="/images/cap.jpg" alt="Cool Guy" style="width:400px;height:400px"  title="Cap is Cool"class ="right">
-    </a>
+<footer>
+    <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> API</p>
+    <p>Icon designs created by Graphic Designer <a href="https://github.com/manifestinteractive/weather-underground-icons" target="_blank">Ashley Jager</a> </p>
+</footer>
 
-  </div>
-
-  <script>
-  var count = 0;
-  function change() {
-    count++;
-    if (count % 2 == 0){
-      document.getElementById('capbutton').innerHTML="More Cap?";
-      document.getElementById('myImage').src="/images/Coolname.jpg";
-      document.getElementById('empty').src="";
-      document.getElementById('empty1').src="";
-      document.getElementById('empty2').src="";
-      document.getElementById('empty3').src="";
-      document.getElementById('empty4').src="";
-      document.getElementById('empty5').src="";
-      document.getElementById('empty6').src="";
-
-    }
-
-    else{
-      document.getElementById('capbutton').innerHTML=" Less Cap?";
-      document.getElementById('myImage').src="/images/cap.jpg";
-      document.getElementById('empty').src="/images/cap.jpg";
-      document.getElementById('empty1').src="/images/cap.jpg";
-      document.getElementById('empty2').src="/images/cap.jpg";
-      document.getElementById('empty3').src="/images/cap.jpg";
-      document.getElementById('empty4').src="/images/cap.jpg";
-      document.getElementById('empty5').src="/images/cap.jpg";
-      document.getElementById('empty6').src="/images/cap.jpg";
-
-}
-}
-
-const nameElement = document.getElementById('capbutton');
-nameElement.addEventListener('mouseenter', () => {
-nameElement.innerHTML = 'Dont you dare!';
-});
-
-nameElement.addEventListener('mouseleave', () => {
-nameElement.innerHTML = 'Less Cap?';
-});
-
-
-</script>
-
-
-
-<img id="empty">
-<img id="empty1">
-<img id="empty2">
-<img id="empty3">
-<img id="empty4">
-<img id="empty5">
-<img id="empty6">
+  <script src= "Weather.js"> </script>
 
 
 </body>
