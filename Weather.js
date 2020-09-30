@@ -89,8 +89,8 @@ function outputWeather(){
 // temperature unit change
 temp.addEventListener("click", event =>{
   if (weather.tempUnit == "C"){
-    temp.innerHTML = `${(weather.temperature)*(9/5)+32} °F`;
-    feelsLike.innerHTML = `Feels like: ${(weather.feelsLike)*(9/5)+32} °F`;
+    temp.innerHTML = `${((weather.temperature)*(9/5)+32).toFixed(2)} °F`;
+    feelsLike.innerHTML = `Feels like: ${((weather.feelsLike)*(9/5)+32).toFixed(2)} °F`;
     weather.tempUnit = "F";
   }
   else {
