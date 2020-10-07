@@ -51,6 +51,7 @@ function getWeather(latitude, longitude){
         .then(function(response){
             let data = response.json();
             return data;
+            console.log(data);
         })
         // extract API info and store in the weather object
         .then(function(data){
