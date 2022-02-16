@@ -1,9 +1,3 @@
-# I use this repo to practice stuff and host projects (i.e. You will find the entire weather project in this repo as well in order to host the app on GitHub Pages)
-The weather project is currently running into issues and therefore cannot be hosted through Github. To try a demo, please download it directly from the Weather-App repo, not from here. 
-
-
-# I plan to eventually turn this repo into a portfolio website - hopefully soon 
-
 # Welcome to GitHub
 
 Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
